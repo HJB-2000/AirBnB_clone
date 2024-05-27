@@ -1,0 +1,179 @@
+/* Container for the list of places */
+.places {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Styles for h1 elements within the .places container */
+.places h1 {
+  width: 100%; /* Full width */
+  font-size: 30px; /* Large font size */
+  padding-left: 20px; /* Padding on the left */
+  margin: 10px auto auto; /* Margin with auto left and right to center */
+}
+
+/* Styles for article elements within the .places container */
+.places article {
+  width: 390px; /* Fixed width */
+  padding: 20px; /* Padding inside the article */
+  margin: 20px; /* Margin around the article */
+  border-radius: 4px; /* Rounded corners */
+  border: 1px solid #FF5A5F; /* Red border */
+  box-sizing: border-box; /* Include border and padding in the element's total width and height */
+}
+
+/* Styles for h2 elements within the .places container */
+.places h2 {
+  font-size: 30px; /* Large font size */
+  margin: 0; /* No margin */
+  padding: 0; /* No padding */
+  text-align: center; /* Center align text */
+  flex-grow: 1; /* Allow h2 to grow and take available space */
+}
+
+/* General styles for article elements */
+article {
+  z-index: -1; /* Negative z-index to position behind other elements */
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow flex items to wrap */
+}
+
+/* Header section inside articles */
+.article_places_header {
+  width: 100%; /* Full width */
+  display: flex; /* Use flexbox for layout */
+}
+
+/* Price display with styles for elements with the .price_by_night class */
+.price_by_night {
+  min-width: 60px; /* Minimum width */
+  height: 60px; /* Fixed height */
+  color: #FF5A5F; /* Text color */
+  border: 4px solid #FF5A5F; /* Red border */
+  border-radius: 50%; /* Make it circular */
+  font-size: 30px; /* Large font size */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  padding: 5px; /* Padding inside the element */
+  margin-bottom: 5px; /* Margin at the bottom */
+}
+
+/* Information section within articles */
+.information {
+  width: 100%; /* Full width */
+  height: 80px; /* Fixed height */
+  border-top: 1px solid #DDDDDD; /* Top border */
+  border-bottom: 1px solid #DDDDDD; /* Bottom border */
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow flex items to wrap */
+  justify-content: space-evenly; /* Distribute items evenly */
+}
+
+/* User section within articles */
+.user {
+  padding: 20px 0 5px; /* Padding top and bottom */
+}
+
+/* Styles for bold and paragraph text within the user section */
+.user b, p {
+  margin: 0; /* No margin */
+  padding: 0; /* No padding */
+}
+
+/* Background image for max guests information */
+.max_guest {
+  background-image: url(../images/icon_group.png); /* URL for the background image */
+}
+
+/* Background image for number of rooms information */
+.number_rooms {
+  background-image: url(../images/icon_bed.png); /* URL for the background image */
+}
+
+/* Background image for number of bathrooms information */
+.number_bathrooms {
+  background-image: url(../images/icon_bath.png); /* URL for the background image */
+}
+
+/* Common styles for max_guest, number_rooms, and number_bathrooms classes */
+.max_guest,
+.number_rooms,
+.number_bathrooms {
+  width: 100px; /* Fixed width */
+  background-repeat: no-repeat; /* No background image repeat */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column-reverse; /* Reverse the column direction */
+  background-position-x: center; /* Center the background image horizontally */
+  text-align: center; /* Center align text */
+}
+
+/* Styles for amenities and reviews sections within the .places container */
+.places .amenities,
+.places .reviews {
+  margin-top: 40px; /* Margin at the top */
+  width: 100%; /* Full width */
+  height: inherit; /* Inherit height */
+}
+
+/* Styles for unordered lists within amenities and reviews sections */
+.places .amenities ul,
+.places .reviews ul {
+  list-style-type: none; /* Remove list bullets */
+  padding: 0; /* No padding */
+}
+
+/* Styles for h2 elements within amenities and reviews sections */
+.places .amenities h2,
+.places .reviews h2 {
+  font-size: 16px; /* Medium font size */
+  text-align: left; /* Left align text */
+  border-bottom: 1px solid #DDDDDD; /* Bottom border */
+}
+
+/* Styles for h3 elements within reviews section */
+.places .reviews h3 {
+  font-size: 14px; /* Small font size */
+}
+
+/* Styles for paragraph elements within reviews section */
+.places .reviews p {
+  font-size: 12px; /* Smaller font size */
+}
+
+/* Styles for list items within amenities section */
+.places .amenities ul li {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange items in a row */
+  justify-content: flex-start; /* Align items to the start */
+  align-content: center; /* Center align content */
+  margin-bottom: 10px; /* Margin at the bottom */
+  align-items: end; /* Align items to the end */
+}
+
+/* Background image for pet-friendly amenities */
+.places_amenities_pet_friendly {
+  background-image: url(../images/icon_pets.png); /* URL for the background image */
+}
+
+/* Background image for TV amenities */
+.places_amenities_tv {
+  background-image: url(../images/icon_tv.png); /* URL for the background image */
+}
+
+/* Background image for WiFi amenities */
+.places_amenities_wifi {
+  background-image: url(../images/icon_wifi.png); /* URL for the background image */
+}
+
+/* Common styles for amenities icons */
+.places_amenities_pet_friendly,
+.places_amenities_tv,
+.places_amenities_wifi {
+  background-size: cover; /* Cover the entire area */
+  background-repeat: no-repeat; /* No background image repeat */
+  width: 20px; /* Fixed width */
+  height: 20px; /* Fixed height */
+  display: inline-block; /* Inline-block display */
+}
